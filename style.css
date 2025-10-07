@@ -1,117 +1,177 @@
-:root{
-    --primary-font-family: "Silkscreen", sans-serif;
+:root {
+  --primary-font-family: "Silkscreen", sans-serif;
 }
 
-body{
-    margin: 1rem;
-    padding: 1rem; 
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+body {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.body-body{
-    /* border: 1rem solid red; */
-    height: 100vh;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(164, 226, 71);
+.body-body {
+  /* border: 1rem solid red; */
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(164, 226, 71);
 }
 
-.heading-section{
-    /* border: 1px solid blue; */
-    display: flex;
-    justify-content: space-between;
-    padding: .3rem;
+.heading-section {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem;
 }
 
-.game-title{
-    font-size: .9rem;
-    font-family: var(--primary-font-family);
+.game-title {
+  font-size: 0.9rem;
+  font-family: var(--primary-font-family);
 }
 
-.player-computer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-top: 0;
-    gap: 1rem;
-    
+.player-computer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 0;
+  gap: 1rem;
 }
 
-.player,.computer{
-    font-family: var(--primary-font-family);
+.player,
+.computer {
+  font-family: var(--primary-font-family);
 }
 
-.start{
-    cursor: pointer;
-    font-family: var(--primary-font-family);
+.start {
+  cursor: pointer;
+  font-family: var(--primary-font-family);
 }
 
-.computer-heading, .player-heading{
-    font-family: var(--primary-font-family);
+.computer-heading,
+.player-heading {
+  font-family: var(--primary-font-family);
 }
 
-.game-body-box{
-    /* border: 5px solid yellow; */
-    flex-grow: 1;
-    display: grid;
-    grid-template-rows: .4fr auto 1fr;
-    width: 100%;
-    align-items: stretch;
-    
+.game-body-box {
+  /* border: 5px solid yellow; */
+  flex-grow: 1;
+  display: grid;
+  grid-template-rows: 0.4fr auto 1fr;
+  width: 100%;
+  align-items: stretch;
 }
 
-.computer-play{
-    /* border: .5rem solid green; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.computer-play {
+  /* border: .5rem solid green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.result-tag{
-    /* border: .5rem solid red; */
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    text-align: center;
-    font-size: 1.5rem;
-    margin: 0;
-    background-color: rgb(226, 162, 42);
-    font-family: var(--primary-font-family);
+.result-tag {
+  /* border: .5rem solid red; */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0;
+  background-color: rgb(226, 162, 42);
+  font-family: var(--primary-font-family);
 }
 
-.player-play{
-    /* border: .5rem solid blue; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.player-play {
+  /* border: .5rem solid blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.rock, .paper, .scissors, .btn{
-    padding: .5rem;
-    font-size: 2.5rem;
-    width: 6rem;
+.rock,
+.paper,
+.scissors,
+.btn {
+  padding: 0.5rem;
+  font-size: 2.5rem;
+  width: 6rem;
 }
 
-.btn-par{
-    font-size: 1rem;
-    padding: 0;
-    margin: 0;
-    font-family: var(--primary-font-family);
-    display: flex;
-    justify-content: center;
-    font-weight: .7rem;
+.btn-par {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  font-family: var(--primary-font-family);
+  display: flex;
+  justify-content: center;
+  font-weight: 0.7rem;
 }
 
-.player-result{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: .5rem;
-    border: .2rem dashed rgb(49, 48, 48);
-    font-size: 2.5rem;
+.player-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border: 0.2rem dashed rgb(49, 48, 48);
+  font-size: 2.5rem;
+  width: 5rem;
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 1024px) {
+    .body-body {
+    width: 70%;
+    /* background-color: blue; */
+  }
+}
+@media (max-width: 768px) {
+    .body-body {
+    width: 90%;
+    /* background-color: blue; */
+  }
+
+  .game-title{
+    flex-wrap: wrap;
+  }
+
+  .rock,
+  .paper,
+  .scissors {
+    font-size: 2rem;
     width: 5rem;
+  }
+
+  .result-tag{
+    font-size: 1.6rem;
+  }
+
+  .player,
+  .computer,
+  .start {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 656px){
+    .game-title{
+        font-size: .7rem;
+    }
+
+    .all-scores{
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .body-body {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    /* background-color: blue; */
+  }
+  
 }
