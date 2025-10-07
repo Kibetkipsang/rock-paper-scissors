@@ -1,0 +1,117 @@
+:root{
+    --primary-font-family: "Silkscreen", sans-serif;
+}
+
+body{
+    margin: 1rem;
+    padding: 1rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.body-body{
+    /* border: 1rem solid red; */
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(164, 226, 71);
+}
+
+.heading-section{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    padding: .3rem;
+}
+
+.game-title{
+    font-size: .9rem;
+    font-family: var(--primary-font-family);
+}
+
+.player-computer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 0;
+    gap: 1rem;
+    
+}
+
+.player,.computer{
+    font-family: var(--primary-font-family);
+}
+
+.start{
+    cursor: pointer;
+    font-family: var(--primary-font-family);
+}
+
+.computer-heading, .player-heading{
+    font-family: var(--primary-font-family);
+}
+
+.game-body-box{
+    /* border: 5px solid yellow; */
+    flex-grow: 1;
+    display: grid;
+    grid-template-rows: .4fr auto 1fr;
+    width: 100%;
+    align-items: stretch;
+    
+}
+
+.computer-play{
+    /* border: .5rem solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-tag{
+    /* border: .5rem solid red; */
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+    background-color: rgb(226, 162, 42);
+    font-family: var(--primary-font-family);
+}
+
+.player-play{
+    /* border: .5rem solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rock, .paper, .scissors, .btn{
+    padding: .5rem;
+    font-size: 2.5rem;
+    width: 6rem;
+}
+
+.btn-par{
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    font-family: var(--primary-font-family);
+    display: flex;
+    justify-content: center;
+    font-weight: .7rem;
+}
+
+.player-result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    border: .2rem dashed rgb(49, 48, 48);
+    font-size: 2.5rem;
+    width: 5rem;
+}
