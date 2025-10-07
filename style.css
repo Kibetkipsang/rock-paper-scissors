@@ -154,16 +154,42 @@ body {
   .start {
     font-size: 0.9rem;
   }
+
+  .btn-par{
+    font-size: .8rem;
+  }
 }
 
 @media (max-width: 656px){
+
     .game-title{
-        font-size: .7rem;
+        font-size: .6rem;
     }
 
-    .all-scores{
-        flex-wrap: nowrap;
+    .btn-par{
+    font-size: .7rem;
+  }
+}
+@media (max-width: 570px){
+    body{
+        margin: 0;
+        padding: 0;
     }
+    .body-body{
+        margin: 0;
+    }
+    .game-title{
+        flex-wrap: wrap;
+    }
+
+    .player-computer {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .btn-par{
+    font-size: .7rem;
+  }
 }
 
 @media (max-width: 480px) {

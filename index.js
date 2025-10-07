@@ -115,6 +115,6 @@ function scoreBoard(result) {
     return;
   }
 
-  computerResult.textContent = `${computerScore} : Computer`;
+  computerResult.textContent = `$Computer : {computerScore}`;
   playerResult.textContent = `Player : ${playerScore}`;
 }
